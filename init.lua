@@ -72,7 +72,7 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
 -- My custom mappings
-require('custom/mappings')
+require 'custom/mappings'
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -683,7 +683,7 @@ require('lazy').setup({
             luasnip.lsp_expand(args.body)
           end,
         },
-        completion = { completeopt = 'menu,menuone,noinsert' },
+        completion = { autocomplete = false, completeopt = 'menu,menuone,noinsert' },
 
         -- For an understanding of why these mappings were
         -- chosen, you will need to read `:help ins-completion`
